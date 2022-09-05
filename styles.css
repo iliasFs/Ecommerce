@@ -236,4 +236,48 @@ position: absolute;
 #features{
   height: 1000px;;
 background-color: darkgray ;
+padding-top:8vw;
+
+}
+
+.books{
+  display:flex;
+  justify-content: space-around;
+
+}
+
+.book__img--wrapper{
+  margin-bottom:8px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  
+
+}
+
+.book:hover .book__img{
+
+  transform: scale(1.03);
+
+}
+.book__img{
+  transition:all 600ms ease;
+  cursor:not-allowed;
+
+}
+
+.book__title{
+  font-size:20px;
+  margin-bottom:8px;
+  
+
+}
+
+.book__title:hover{
+
+  text-decoration: underline;
+  cursor:not-allowed;
+  
+
+  
 }
