@@ -209,7 +209,7 @@ button:active {
 /*FEATURES*/
 
 #features {
-  height: 1000px;
+  
   background-color: darkgray;
   padding-top: 8vw;
 }
@@ -234,9 +234,12 @@ button:active {
   transition: all 600ms ease;
   cursor: pointer;
   max-height:300px;
+  height:300px;
+
 }
 
 .book__title {
+  text-align: center;
   font-size: 20px;
   margin-bottom: 8px;
 }
@@ -263,6 +266,43 @@ button:active {
   padding-right:8px;
   color: rgba(0, 0, 0, 0.542);
 }
-.book{
+
+
+.properties__wrapper{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width:200px;
+}
+
+
+/* Section LATEST BOOKS*/
+
+.latest__books{
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
 
 }
+
+.book{
+  width:100%;
+  max-width:25%;
+  padding-bottom:20px;
+  
+  }
+
+
+  /* Explore Section */
+
+  .explore{
+    background-color: darkgray;
+  }
+
+  .btn{
+    max-width:100px;
+  }
