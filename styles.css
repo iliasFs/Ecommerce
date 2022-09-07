@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+html{
+
+  scroll-behavior: smooth;
+}
+
 .nav {
   height: 80px;
 }
@@ -34,6 +39,8 @@ a {
 .logo {
   height: 100%;
   width: 160px;
+  color:white;
+
 }
 
 p {
@@ -303,6 +310,76 @@ button:active {
     background-color: darkgray;
   }
 
-  .btn{
-    max-width:100px;
+  .btn__explore{
+    max-width:160px;
+    border:none;
+    padding: 8px 16px;
+    font-size:16px;
+    background-color: black;
+    color:white;
+    margin-top:16px;
+  }
+
+  #header__bottom{
+
+    font-size: 32px;
+  }
+  .row__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*FOOTER*/
+
+  .footer_links--wrapper, .footer__links{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:16px;
+    width:100%;
+    max-width:450px;
+
+  }
+
+  
+
+  .row__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .footer__img--wrapper{
+
+    margin-bottom: 32px;
+    display: flex;
+    
+
+  }
+  .footer__links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer{
+    background-color: black;
+  }
+  .footer__img--logo{
+width:160px;
+filter: grayscale(1) invert(1); /* we change the logo color initially to grayscale and then all to white*/
+
+  }
+
+  .footer__link{
+    color:white;
+  }
+  .footer__para{
+    margin-top:16px;
+    color:white;
+
   }
