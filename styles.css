@@ -335,7 +335,7 @@ button:active {
 .book__img {
   transition: all 600ms ease;
   cursor: pointer;
-  max-height:300px;
+  max-height:250px;
   height:300px;
 
 }
@@ -392,7 +392,7 @@ button:active {
 }
 
 .book{
-  width:100%;
+  
   max-width:25%;
   padding-bottom:20px;
   
@@ -501,7 +501,7 @@ filter: grayscale(1) invert(1); /* we change the logo color initially to graysca
 
 .description__header{
 
-  padding:0 16px;
+  padding:0 24px;
 
 
 }
@@ -522,10 +522,18 @@ h2{
 .btn{
   font-size: 16px;
 }
+.row{
+  width:100%;
+  max-width:600px;
+}
+.books{
+  flex-wrap:wrap;
 
+}
 
 
 .book{
+  width:100%;
   max-width:50%;
   display: flex;
   flex-direction: column;
@@ -533,14 +541,80 @@ h2{
   align-items: center;
 
 }
-.books{
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .highlight__subtitle, .highlight__para{
+  font-size: 14px;
   text-align: center;
+  width: 100px;
 }
 
+  
+
+
+  .book__title{
+
+    font-size: 14px;
   }
+
+  .book__img{
+    max-height:210px;
+
+  }
+  .row{
+    align-items: center;
+  }
+
+  .highlight{
+
+    padding: 20px 0;
+  
+  }
+
+  .highlight:not(:last-child){
+
+    margin-bottom:40px;
+
+  }
+
+  .highlight__wrapper{
+    display: flex;
+    justify-content:space-between;
+    width:60%;
+    
+  }
+
+  }
+
+ @media(max-width:450px) {
+
+  .books{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .highlight__wrapper{
+
+    width: calc(100% / 3);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+  }
+
+  .footer_links--wrapper{
+
+    max-width:300;
+    padding: 0 20px;
+
+  }
+ }
+
+ /* END */
+
+ 
